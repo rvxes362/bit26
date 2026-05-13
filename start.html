@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>BIT 26 - Start</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+.logo-wrap{
+    display:flex;
+    justify-content:center;
+    margin: 30px 0;
+}
+
+.logo{
+    width: 250px;
+    max-width: 80%;
+    height: auto;
+    border-radius: 20px;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.25));
+    transition: transform 0.3s ease;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+}
+</style>
+
+<!-- 🔥 SCRIPT für sauberes Seitenverhalten -->
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+
+    // 🔝 Immer nach oben scrollen beim Laden
+    window.scrollTo(0, 0);
+
+    // 🔁 Alle Links stabil machen (kein Bug bei mehrfach klicken)
+    const links = document.querySelectorAll("a");
+
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            document.body.style.pointerEvents = "none"; // verhindert Spam-Klicks
+            setTimeout(() => {
+                document.body.style.pointerEvents = "auto";
+            }, 300);
+        });
+    });
+
+});
+</script>
+
+</head>
+<body>
+
+<header>BIT 26 – Berufsinformationstag 2026</header>
+
+<div class="navbar">
+    <div class="nav-links">
+        <a href="start.html" class="active">Start</a>
+        <a href="anleitung.html">Anleitung</a>
+        <a href="phase1.html">1</a>
+        <a href="phase2.html">2</a>
+        <a href="phase3.html">3</a>
+        <a href="phase4.html">4</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+
+    <!-- 👉 WICHTIG: Button bleibt stabil -->
+    <a class="next-btn" href="anleitung.html">Starten →</a>
+</div>
+
+<div class="container">
+
+<div class="logo-wrap">
+    <img src="alle logos/BIT logo.png" alt="BIT Logo.png" class="logo">
+</div>
+
+<h1>Willkommen beim BIT 26</h1>
+
+<div class="box">
+<strong> Datum & Ort:</strong><br>
+Der Berufsinformationstag findet am <strong>25.06.2025</strong>, in der Zeit <strong>von 10:00 bis 13:00 Uhr</strong><br>
+im <strong>Beruflichen Gymnasium (Windmühlenweg 3, 27793 Wildeshausen, D-Gebäude)</strong> statt.
+</div>
+
+<div class="box">
+<strong> Austausch mit Ausbildungsbetrieben/Fachhochschulen/Universitäten:</strong><br>
+Im Speeddating-Format hast du die Möglichkeit, im Rahmen von <b>2 verbindlich gebuchten Gesprächsterminen</b> mit den Personalverantwortlichen von 2 Unternehmen ins Gespräch zu kommen. An dem Tag erwarten dich <strong>knapp 40 Ausbildungsbetriebe/Fachhochschulen/Universitäten aus verschiedenen Branchen und Fachrichtungen.</strong><br>
+</div>
+
+<div class="box">
+<strong> Deine Chancen:</strong><br>
+• Allgemeine Information über Ausbildungs- und Studienplätze sammeln<br>
+• <b>Neue Einblicke</b> in verschiedene Berufe gewinnen<br>
+• <b>Kontakte</b> zu Unternehmen im Rahmen des Speeddatings <b>knüpfen</b><br>
+• Deine vorbereitete Bewerbungsmappe beim gebuchten Termin direkt abgeben<br>
+• Interessante <strong>Ausbildungsplätze</strong> entdecken
+</div>
+
+<div class="box">
+<strong> Vorbereitung:</strong><br>
+Diese Webseite unterstützt dich dabei, dich <strong>optimal auf den Berufsinformationstag</strong> vorzubereiten.
+</div>
+
+<div class="box">
+<strong> Los geht's:</strong><br>
+Klicke oben auf <strong>„Starten“</strong> oder beginne direkt mit <strong>Phase 1</strong>.
+</div>
+
+</div>
+
+</body>
+</html>

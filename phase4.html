@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>BIT 26 - Phase 4</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+textarea{
+    width:100%;
+    padding:10px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    resize: vertical;
+}
+</style>
+
+<!-- 🔥 GLOBAL SCRIPT -->
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+
+    // 🔝 Immer oben starten
+    window.scrollTo({ top: 0, behavior: "instant" });
+
+    // 🔁 Klick-Schutz
+    const links = document.querySelectorAll("a");
+
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            document.body.style.pointerEvents = "none";
+            setTimeout(() => {
+                document.body.style.pointerEvents = "auto";
+            }, 300);
+        });
+    });
+
+});
+</script>
+
+</head>
+
+<body>
+
+<header>BIT 26 – Berufsinformationstag 2026</header>
+
+<div class="navbar">
+    <div class="nav-links">
+        <a href="start.html">Start</a>
+        <a href="anleitung.html">Anleitung</a>
+        <a href="phase1.html">1</a>
+        <a href="phase2.html">2</a>
+        <a href="phase3.html">3</a>
+        <a href="phase4.html" class="active">4</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+
+    <div class="nav-actions">
+        <a class="back-btn" href="phase3.html">← Zurück</a>
+        <a class="next-btn" href="kontakt.html">Weiter →</a>
+    </div>
+</div>
+
+<div class="container">
+
+<h1>Phase 4: Auswahl deiner Unternehmen</h1>
+
+<!-- WICHTIG INFO -->
+<div class="box">
+<strong> Wichtige Information zur Wahl:</strong><br><br>
+Die Wahlen finden am <strong>22.05.2026 um 08:30 Uhr</strong> über einen <strong>Moodle-Kurse</strong> statt.<br><br>
+<strong>Wer zuerst kommt, wählt zuerst!</strong><br>
+Die Gesprächszeiten werden von uns vorgegeben.
+</div>
+
+<!-- SCREENSHOT INFO -->
+<div class="box">
+<strong>Wichtig:</strong><br><br>
+Mache von deinen <strong>4 ausgewählten Unternehmen Screenshots</strong>,<br>
+damit du sie später bei der Wahl schnell wiederfindest.
+</div>
+
+<!-- AUFGABE -->
+<div class="box">
+<strong>Aufgabe:</strong><br><br>
+Wähle <strong>4 Unternehmen</strong>, die du beim Speeddating treffen möchtest.<br>
+Schreibe sie hier auf:
+</div>
+
+<!-- 4 EINGABEFELDER -->
+
+<div class="box">
+<strong>1️⃣ Unternehmen:</strong><br><br>
+<textarea rows="3" placeholder="z. B. Bundeswehr, LzO, Agrarfrost..."></textarea>
+</div>
+
+<div class="box">
+<strong>2️⃣ Unternehmen:</strong><br><br>
+<textarea rows="3"></textarea>
+</div>
+
+<div class="box">
+<strong>3️⃣ Unternehmen:</strong><br><br>
+<textarea rows="3"></textarea>
+</div>
+
+<div class="box">
+<strong>4️⃣ Unternehmen:</strong><br><br>
+<textarea rows="3"></textarea>
+</div>
+
+</div>
+
+</body>
+</html>
