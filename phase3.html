@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Phase 3</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+/* ✅ TIMER SO WIE DU IHN HATTEN WOLLTEST */
+.timer{
+    text-align:center;
+    margin:20px;
+    font-size:20px;
+}
+
+/* ✅ BOXEN BLEIBEN GLEICH */
+.company-box{
+    position:relative;
+    padding-top:90px;
+    min-height:180px;
+    box-sizing:border-box;
+}
+
+/* ✅ BILDER IMMER OBEN LINKS + GLEICHE GRÖSSE */
+.company-box .logo{
+    position:absolute;
+    top:15px;
+    left:15px;
+
+    width:70px;
+    height:70px;
+
+    object-fit:contain;
+    display:block;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>BIT 26 – Berufsinformationstag 2026</header>
+
+<div class="navbar">
+    <div class="nav-links">
+        <a href="index.html">Start</a>
+        <a href="anleitung.html">Anleitung</a>
+        <a href="phase1.html">1</a>
+        <a href="phase2.html">2</a>
+        <a href="phase3.html" class="active">3</a>
+        <a href="phase4.html">4</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+
+    <!-- ✅ WIE ORIGINAL: ZURÜCK + WEITER -->
+    <div class="nav-actions">
+        <a class="back-btn" href="phase2.html">← Zurück</a>
+        <a class="next-btn" href="phase4.html">Weiter →</a>
+    </div>
+</div>
+
+<div class="container">
+
+<h1>Phase 3: Unternehmen & Berufe</h1>
+
+<!-- TIMER (UNVERÄNDERT WIE DEIN ORIGINAL) -->
+<div class="timer">
+    ⏱️ Zeit: <span id="time">20:00</span>
+    <button onclick="toggleTimer()">Start/Stop</button>
+</div>
+
+<!-- EINLEITUNG -->
+<div class="intro-box">
+
+<p>
+In <b>Phase 3</b> stellen wir verschiedene <b>Unternehmen, Hochschulen und Institutionen</b> vor. 
+Sie geben Einblicke in ihre <b>Ausbildungsberufe</b>, <b>dualen Studiengänge</b> und <b>echte Einstiegsmöglichkeiten.</b>
+</p>
+
+<p>
+Dabei geht es um <b>Banken & Finanzen</b>, <b>öffentlichen Dienst</b>, <b>Industrie & Technik</b> sowie <b>Gesundheit & Bildung</b>.
+</p>
+
+<p>
+So bekommst du einen klaren Überblick über deine <b>berufliche Zukunft.</b>
+</p>
+
+</div>
+
+<!-- BANKEN & FINANZEN -->
+<h2>🏦 Banken, Finanzen & Versicherung</h2>
+<div class="company-grid">
+
+<div class="company-box"><img src="alle logos/Volksbank_Logo.svg.png" class="logo"><h3>Volksbank</h3><p>Bankkaufmann/-frau, IT, Controlling</p></div>
+
+<div class="company-box"><img src="alle logos/3. LzO-Logo_meineSparkasse_Rot_rgb-Kopie - Kopie.png" class="logo"><h3>LzO</h3><p>Bankausbildung, duales Studium</p></div>
+
+<div class="company-box"><img src="alle logos/finanzamt.jpg" class="logo"><h3>Finanzamt</h3><p>Finanzwirt/in, Verwaltung</p></div>
+
+<div class="company-box"><img src="alle logos/seb.jpg" class="logo"><h3>SEB Steuerberatung</h3><p>Steuern & Buchhaltung</p></div>
+
+<div class="company-box"><img src="alle logos/treuhand.png" class="logo"><h3>Treuhand</h3><p>Wirtschaftsprüfung</p></div>
+
+<div class="company-box"><img src="alle logos/18. Logo_Alte-Oldenburger.png" class="logo"><h3>Alte Oldenburger</h3><p>Versicherung & IT</p></div>
+
+<div class="company-box"><img src="alle logos/21. Technikerkrankenkasse-logo.svg.png" class="logo"><h3>Techniker Krankenkasse</h3><p>Gesundheit & Verwaltung</p></div>
+
+</div>
+
+<!-- ÖFFENTLICHER DIENST -->
+<h2>🛡️ Öffentlicher Dienst & Sicherheit</h2>
+<div class="company-grid">
+
+<div class="company-box"><img src="alle logos/4. bundeswehr-corporate-design.jpg" class="logo"><h3>Bundeswehr</h3><p>IT, Medizin, Militär</p></div>
+
+<div class="company-box"><img src="alle logos/25. Federal_Police_Patch.svg.png" class="logo"><h3>Bundespolizei</h3><p>Sicherheit & Cybercrime</p></div>
+
+<div class="company-box"><img src="alle logos/6. s-l1200.jpg" class="logo"><h3>Zoll</h3><p>Kontrolle & Verwaltung</p></div>
+
+<div class="company-box"><img src="alle logos/19. logo_der_stadt_wildeshausen-fe1b602d7d2e15cc5c693ce4c8bca3f1-0.jpg" class="logo"><h3>Stadt Wildeshausen</h3><p>Verwaltung & Bau</p></div>
+
+</div>
+
+<!-- BILDUNG -->
+<h2>🎓 Bildung & Studium</h2>
+<div class="company-grid">
+
+<div class="company-box"><img src="alle logos/7. Logo_Uni_Vechta-neu.png" class="logo"><h3>Uni Vechta</h3><p>Lehramt & Soziale Arbeit</p></div>
+
+<div class="company-box"><img src="alle logos/8. hs-jade-hochschule-wilhelmshaven-oldenburg-elsfleth-studienort-oldenburg-jadehs-logo-logo-default.png" class="logo"><h3>Jade Hochschule</h3><p>IT, Wirtschaft, Technik</p></div>
+
+<div class="company-box"><img src="alle logos/9. Logo-Uni-Osnabrueck.jpg" class="logo"><h3>Uni Osnabrück</h3><p>Psychologie, Informatik</p></div>
+
+<div class="company-box"><img src="alle logos/fom.png" class="logo"><h3>FOM Hochschule</h3><p>Duales Studium</p></div>
+
+<div class="company-box"><img src="alle logos/1. ED Social Media Logo 3.png" class="logo"><h3>Eurodesk</h3><p>Auslandsaufenthalte</p></div>
+
+</div>
+
+<!-- GESUNDHEIT -->
+<h2>🏥 Gesundheit & Pflege</h2>
+<div class="company-grid">
+
+<div class="company-box"><img src="alle logos/14. krankenhaus_johanneum_wildeshausen_logo.jfif" class="logo"><h3>Krankenhaus Johanneum</h3><p>Pflege & Medizin</p></div>
+
+<div class="company-box"><img src="alle logos/20. NOW_LOGO_Oldenburg.png" class="logo"><h3>Klinikum Oldenburg</h3><p>Pflege & Forschung</p></div>
+
+<div class="company-box"><img src="alle logos/bvo.jpg" class="logo"><h3>BVO Seniorenheime</h3><p>Pflege & Betreuung</p></div>
+
+</div>
+
+<!-- INDUSTRIE -->
+<h2>⚙️ Industrie, Technik & Agrar</h2>
+<div class="company-grid">
+
+<div class="company-box"><img src="alle logos/10. 40_Jahre_Logo_rgb.png" class="logo"><h3>Hermes Systeme GmbH</h3><p>Elektrotechnik & IT</p></div>
+
+<div class="company-box"><img src="alle logos/11. Logo-PHW.png" class="logo"><h3>PHW Gruppe</h3><p>Produktion & Logistik</p></div>
+
+<div class="company-box"><img src="alle logos/12. agrarfrost logo.png" class="logo"><h3>Agrarfrost</h3><p>Lebensmittelproduktion</p></div>
+
+<div class="company-box"><img src="alle logos/13. Amazonen-Werke_logo.svg.png" class="logo"><h3>Amazonen Werke</h3><p>Maschinenbau</p></div>
+
+<div class="company-box"><img src="alle logos/23. 4e6b1d7490d02194fc89ba217c6c454a07102486.jpeg" class="logo"><h3>Goldschmaus</h3><p>Lebensmittel & Technik</p></div>
+
+<div class="company-box"><img src="alle logos/erxleben.png" class="logo"><h3>Erxleben</h3><p>Agrar & Logistik</p></div>
+
+</div>
+
+</div>
+
+<!-- Der Button -->
+<a href="#top" id="backToTop" title="Nach oben">
+  &#8593;
+</a>
+
+<style>
+  #backToTop {
+    /* Positionierung */
+    position: fixed;
+    bottom: 30px;         /* Abstand vom unteren Rand */
+    left: 50%;            /* Startet bei 50% der Breite */
+    transform: translateX(-50%); /* Zieht den Button um die eigene Hälfte zurück -> exakt mittig */
+    z-index: 1000;        /* Immer im Vordergrund */
+
+    /* Größe und Form */
+    font-size: 40px;      /* Macht den Pfeil schön groß */
+    width: 50px;          /* Feste Breite für einen perfekten Kreis */
+    height: 50px;         /* Feste Höhe */
+    line-height: 45px;    /* Zentriert den Pfeil vertikal im Kreis */
+    text-align: center;   /* Zentriert den Pfeil horizontal */
+    
+    /* Design */
+    background-color: #333; /* Dunkler Hintergrund */
+    color: white;           /* Weißer Pfeil */
+    text-decoration: none;  /* Entfernt Unterstreichung */
+    border-radius: 50%;     /* Macht den Button kreisrund */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Dezenter Schatten */
+    
+    transition: all 0.3s ease; /* Weicher Übergang bei Hover */
+  }
+
+  #backToTop:hover {
+    background-color: red;  /* Wird rot beim Drüberfahren */
+    transform: translateX(-50%) scale(1.1); /* Wird leicht größer beim Hover */
+  }
+
+  /* Sorgt für sanftes Hochgleiten statt Springen */
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+<script>
+let totalTime = 20 * 60;
+let timeLeft = totalTime;
+let running = false;
+
+function formatTime(seconds){
+    let min = Math.floor(seconds / 60);
+    let sec = seconds % 60;
+    return `${min}:${sec < 10 ? "0" : ""}${sec}`;
+}
+
+function toggleTimer(){
+    running = !running;
+}
+
+setInterval(()=>{
+    if(running && timeLeft > 0){
+        timeLeft--;
+        document.getElementById("time").innerText = formatTime(timeLeft);
+    }
+
+    if(timeLeft === 0){
+        running = false;
+        document.getElementById("time").innerText = "Zeit abgelaufen!";
+    }
+},1000);
+</script>
+
+</body>
+</html>
